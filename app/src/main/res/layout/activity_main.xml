@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <fragment
+            android:id="@+id/fragment_main"
+            android:name="com.example.finalprojectamit.MainFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_main"
+            />
+
+        <TextView
+            android:id="@+id/tvUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="User's Games Info"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="512px"
+            android:layout_height="512px"
+            android:layout_gravity="center"
+            android:id="@+id/ivImage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textSize="20dp"
+                android:id="@+id/tvUsername"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/usernameHomeScreen"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: "
+                android:id="@+id/tvAge"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="age"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/ageHomeScreen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height: "
+                android:id="@+id/tvHeight"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="height"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/heightHomeScreen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Three Points Average: "
+                android:id="@+id/tvThreePointsAv"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Three Points Average"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/ThreePAvg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Two Points Average: "
+                android:id="@+id/tvTwoPointsAv"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Two Points Average"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/TwoPAvg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assists Average: "
+                android:id="@+id/tvAssistsAverage"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assists Average"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/AssistsAvg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fouls Average: "
+                android:id="@+id/tvFoulsAverage"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fouls Average"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/FoulAvg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blocks Average: "
+                android:id="@+id/tvBlocksAverage"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blocks Average"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/BlocksAvg" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ball looses Average: "
+                android:id="@+id/tvBallLoosesAverage"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ball looses Average"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:id="@+id/BallsLooseAvg" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/btnAddGame"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ADD A NEW GAME"
+                android:textSize="17dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="17dp"
+                android:text="VIEW THE PAST GAMES"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btnPastGames" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

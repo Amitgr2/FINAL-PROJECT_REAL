@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="#AACEDD"
+    android:id="@+id/lBackground">
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="CITY"
+        android:layout_weight="1.5"
+        android:clickable="false"
+        />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="DATE"
+        android:layout_weight="1"
+        android:clickable="false"
+        />
+
+</LinearLayout>
